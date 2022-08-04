@@ -36,3 +36,10 @@ button {
 .gallery-item:not(:last-child) {
   margin-right: 20px;
 }
+
+div#boxes div {
+  background-color: red;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
