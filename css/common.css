@@ -39,9 +39,12 @@ button {
 
 /* div#boxes > div {
   background-color: red;
+} */
+
+div#boxes > div:first-child {
+  margin-top: 5px;
 }
 
 div#boxes > div:not(:last-child) {
   margin-bottom: 5px;
-  background-color: red;
-} */
+}
