@@ -2,7 +2,7 @@ const userNumberInput = document.querySelector("div#controls > input");
 const createButton = document.querySelector("div > button[data-create]");
 const destroyButton = document.querySelector("div > button[data-destroy]");
 const boxesCollection = document.querySelector("div#boxes");
-let initialValue = 30;
+let initialBoxSizeValue = 30;
 let userInputValue = 0;
 
 function getRandomHexColor() {
@@ -15,10 +15,10 @@ function createBoxes(amount) {
   const newBoxes = document.querySelectorAll("div#boxes > div");
 
   [...newBoxes].forEach((box) => {
-    box.style.width = initialValue + "px";
-    box.style.height = initialValue + "px";
+    box.style.width = initialBoxSizeValue + "px";
+    box.style.height = initialBoxSizeValue + "px";
     box.style.backgroundColor = getRandomHexColor();
-    initialValue = initialValue + 10;
+    initialBoxSizeValue = initialBoxSizeValue + 10;
   });
 }
 

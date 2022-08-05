@@ -1,8 +1,8 @@
 const displayValue = document.querySelector("#counter > span#value");
-const decrementCounter = document.querySelector(
+const decrementButton = document.querySelector(
   '#counter > button[data-action="decrement"]'
 );
-const incrementCounter = document.querySelector(
+const incrementButton = document.querySelector(
   '#counter > button[data-action="increment"]'
 );
 
@@ -11,5 +11,5 @@ let counterValue = 0;
 const decreaseValue = () => (displayValue.textContent = counterValue -= 1);
 const increaseValue = () => (displayValue.textContent = counterValue += 1);
 
-decrementCounter.addEventListener("click", decreaseValue);
-incrementCounter.addEventListener("click", increaseValue);
+decrementButton.addEventListener("click", decreaseValue);
+incrementButton.addEventListener("click", increaseValue);
