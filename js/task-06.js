@@ -1,14 +1,13 @@
 const textInput = document.querySelector("input#validation-input");
-const maxInputLength = Number(textInput.getAttribute("data-length"));
+const validInputLength = Number(textInput.getAttribute("data-length"));
 let userInputLength;
 
 const inputLengthCounter = (event) => {
   userInputLength = event.currentTarget.value.length;
-  console.log(userInputLength);
 };
 
 const validInputLengthChecker = () => {
-  userInputLength <= maxInputLength
+  userInputLength === validInputLength
     ? (textInput.style.borderColor = "#4caf50")
     : (textInput.style.borderColor = "#f44336");
 };

@@ -17,9 +17,10 @@ const imagesList = document.querySelector("ul.gallery");
 
 const imagesMarkup = images
   .map((img) => {
-    return `<li class = "gallery-item"><img class= "gallery-image" src=${img.url} alt="${img.alt}" width = 270></li> `;
+    const { url, alt } = img;
+    return `<li class = "gallery-item"><img class= "gallery-image" src=${url} alt="${alt}" width = 270></li> `;
   })
   .join("");
-imagesList.insertAdjacentHTML("beforeend", imagesMarkup);
+imagesList.insertAdjacentHTML("afterbegin", imagesMarkup);
 
 console.log(imagesList);
