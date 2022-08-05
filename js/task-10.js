@@ -17,8 +17,8 @@ function createBoxes(amount) {
   [...newBoxes].forEach((box) => {
     box.style.width = initialBoxSizeValue + "px";
     box.style.height = initialBoxSizeValue + "px";
-    box.style.backgroundColor = getRandomHexColor();
     initialBoxSizeValue = initialBoxSizeValue + 10;
+    box.style.backgroundColor = getRandomHexColor();
   });
 }
 
