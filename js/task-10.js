@@ -1,6 +1,6 @@
 const userNumberInput = document.querySelector("div#controls > input");
-const createButton = document.querySelector("div > button[data-create]");
-const destroyButton = document.querySelector("div > button[data-destroy]");
+const createBoxButton = document.querySelector("div > button[data-create]");
+const destroyBoxButton = document.querySelector("div > button[data-destroy]");
 const boxesCollection = document.querySelector("div#boxes");
 let initialBoxSizeValue = 30;
 let userInputValue = 0;
@@ -35,5 +35,5 @@ function destroyBoxes() {
 }
 
 userNumberInput.addEventListener("input", inputNumber);
-createButton.addEventListener("click", createNewBoxes);
-destroyButton.addEventListener("click", destroyBoxes);
+createBoxButton.addEventListener("click", createNewBoxes);
+destroyBoxButton.addEventListener("click", destroyBoxes);
