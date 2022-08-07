@@ -17,9 +17,22 @@ function createBoxes(amount) {
   [...newBoxes].forEach((box) => {
     box.style.width = initialBoxSizeValue + "px";
     box.style.height = initialBoxSizeValue + "px";
-    initialBoxSizeValue = initialBoxSizeValue + 10;
+    initialBoxSizeValue += 10;
     box.style.backgroundColor = getRandomHexColor();
   });
+
+  // ------------SECOND SOLUTION OF BOXES CREATING
+
+  // const newBoxes = [];
+  // for (let i = 0; i < amount; i += 1) {
+  //   const box = document.createElement("div");
+  //   box.style.width = initialBoxSizeValue + "px";
+  //   box.style.height = initialBoxSizeValue + "px";
+  //   initialBoxSizeValue += 10;
+  //   box.style.backgroundColor = getRandomHexColor();
+  //   newBoxes.push(box);
+  // }
+  // boxesCollection.append(...newBoxes);
 }
 
 function inputNumber(event) {
