@@ -32,7 +32,17 @@ function createBoxes(amount) {
   //   box.style.backgroundColor = getRandomHexColor();
   //   newBoxes.push(box);
   // }
-  // boxesCollection.append(...newBoxes);
+
+  // -----------THIRD SOLUTION OF BOXES CREATING
+
+  // [...newBoxes].map((box) => {
+  //   box.style.width = initialBoxSizeValue + "px";
+  //   box.style.height = initialBoxSizeValue + "px";
+  //   initialBoxSizeValue += 10;
+  //   box.style.backgroundColor = getRandomHexColor();
+  // });
+
+  boxesCollection.append(...newBoxes);
 }
 
 function inputNumber(event) {
